@@ -1,4 +1,4 @@
-HelpDeskZ 1.0.2 - Arbitrary File Upload
+## HelpDeskZ 1.0.2 - Arbitrary File Upload
 
 https://github.com/evolutionscript/HelpDeskZ-1.0
 
