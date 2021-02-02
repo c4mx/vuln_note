@@ -1,6 +1,7 @@
 HelpDeskZ 1.0.2 - Arbitrary File Upload
 
 https://github.com/evolutionscript/HelpDeskZ-1.0
+
 https://www.exploit-db.com/exploits/40300
 
 ### Root causes
@@ -9,7 +10,7 @@ https://www.exploit-db.com/exploits/40300
 
 The backend controller first stores the user's uploaded file to '/uploads/tickets/' folder, then proceed to validate it.
 
-In `controllers/submit_ticket_controller.php`:
+In 'controllers/submit_ticket_controller.php':
 
 ![Cause 1](cause1.png)
 
