@@ -19,5 +19,8 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install zip \
     && docker-php-ext-enable gd 
 
+# avoid reconfig 'AllowOverride'
 RUN mv /etc/apache2/conf-enabled/docker-php.conf /etc/apache2/conf-enabled/docker-php.conf.bak
 
+# redirect php error to stderr
+RUN COPY php-enable-errlog.ini /usr/local/etc/php/conf.d/
